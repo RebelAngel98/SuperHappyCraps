@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Super Happy Fun Times</title>
+</head>
+<body>
+<h1> Crappies </h1>
+<button onclick="rollDice()" type="button">Roll the Dice</button>
+<p id="iddiceOne"></p>
+<p id="iddiceTwo"></p>
+   <script>
+       function rollDice() {
+           alert("You ready for this?");
+           var diceOne = Math.floor(Math.random() * ((6 - 1) + 1) + 1);
+           var diceTwo = Math.floor(Math.random() * ((6 - 1) + 1) + 1);
+           //Randomizer isn't staying with numbers without decimal places -Got it going.
+           document.getElementById("iddiceOne").innerHTML = diceOne;
+           document.getElementById("iddiceTwo").innerHTML = diceTwo;
+           //GOT TWO DICE!!! YAY!
+           //stackoverflow.com
+
+       }
+</script>
+<fieldset id="fieldset">
+    <legend><div id="title">Rules:</div></legend>
+    <p class="rules">First Roll:<br>
+        2,3,12 are losers:<br>
+        7,11 are the winners:<br>
+        4,5,6,8,9, or 10 establishes the next roll<br><br>
+
+        Next Roll:<br>
+        7 is a loser <br>
+        Making your point (getting the same value as the first roll) is a winner<br>
+        All other values require another roll of the dice</p>
+</fieldset>
+
+
+
+
+
+
+
+
+</body>
+</html>
